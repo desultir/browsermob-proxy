@@ -1,3 +1,6 @@
+On macos:
+brew install maven
+ensure you're using java 1.8 (i used adoptopenjdk1.8)
 Run make build then create a release on github and upload the .zip in the browsermob-dist/target directory
 
 
