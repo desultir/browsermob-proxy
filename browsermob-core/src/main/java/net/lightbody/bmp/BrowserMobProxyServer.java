@@ -96,11 +96,6 @@ public class BrowserMobProxyServer implements BrowserMobProxy {
     private static final String KEYSTORE_PASSWORD = "password";
 
     /**
-     * The default pseudonym to use when adding the Via header to proxied requests.
-     */
-    public static final String VIA_HEADER_ALIAS = "browsermobproxy";
-
-    /**
      * True only after the proxy has been successfully started.
      */
     private final AtomicBoolean started = new AtomicBoolean(false);
