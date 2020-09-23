@@ -302,8 +302,7 @@ public class BrowserMobProxyServer implements BrowserMobProxy {
                 .withServerResolver(delegatingResolver)
                 .withAddress(clientBindSocket)
                 .withConnectTimeout(connectTimeoutMs)
-                .withIdleConnectionTimeout(idleConnectionTimeoutSec)
-                .withProxyAlias(VIA_HEADER_ALIAS);
+                .withIdleConnectionTimeout(idleConnectionTimeoutSec);
 
         if (serverBindAddress != null) {
             bootstrap.withNetworkInterface(new InetSocketAddress(serverBindAddress, 0));
